@@ -1,0 +1,285 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.base{
+    top:0;
+    height: 1680px;
+}
+.header{
+    position: absolute;
+    top:0;
+    background-color: rgb(0,0,0,0);
+    line-height: 1;
+    width: 100%;
+    height: 150px;
+    z-index: 10;
+}
+.headerText{
+    position: absolute;
+    color: white;
+    font-family: 'Playfair Display';
+    width: 50px;
+    top: 53px;
+    font-size:28px;
+}
+#name{
+    top: 38px;
+    font-size:55px;
+    left: 50px;
+}
+#linkedin{
+    position: absolute;
+    font-size:50px; 
+    color:white;
+    top: 45px;
+    right:150px;
+}
+#linkedin:hover{
+    color: #d3d3d4;
+    cursor: pointer;
+}
+#bilibili{
+    position: absolute;
+    font-size:45px; 
+    color:white;
+    top: 53px;
+    right:50px;
+}
+#bilibili:hover{
+    color: #d3d3d4;
+    cursor: pointer;
+}
+.headerText:hover{
+    color: #d3d3d4;
+    cursor: pointer;
+}
+.intro{
+    position: absolute;
+    z-index: -1;
+    background: url("color3.jpg") no-repeat;
+    background-size: cover;
+    background-position: center 0;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    top:0;
+}
+.introtext{
+    position: relative;
+    text-align: center;
+    top: 50%;
+    font-family: 'Playfair Display';
+    font-size: 100px;
+    font-weight: 100;
+    letter-spacing: -3px;
+    color: white;
+}
+
+.fade-in{
+    opacity: 0;
+    transition: all 400ms ease-in;
+}
+.fade-in.appear{
+    opacity: 1;
+    transform: translateY(-60px);
+}
+
+.vote{
+    position: absolute;
+    top: 850px;
+    height: 830px;
+    width: 100%;
+}
+
+.vote-input{
+    position: absolute;
+    display: none;
+}
+
+.button{
+    all: unset;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    font-family: "Balsamiq Sans", cursive;
+    background-color: transparent;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    transition: all 100ms linear;
+}
+.button:before{
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left:0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1em) rotateX(30deg) scale(1, 0.35);
+    filter: blur(1.5em);
+    opacity: 0.9;
+}
+.button::after{
+    content:"";
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    opacity: 0;
+    transition: opacity 100ms linear;
+}
+
+.button:hover,
+.button:focus
+{
+    color: white;
+    text-shadow: none;
+}
+.button:hover::before,
+.button:focus::before {
+  opacity: 1;
+}
+.button:hover::after,
+.button:focus::after {
+  opacity: 1;
+}
+.red{
+    float: left;
+    text-align: center;  
+    background: black;
+    color: hsl(317 100% 54%);
+    height: 330px;
+    width: 25%;
+}
+#red-button{
+    font-size: 3rem;
+    color: hsl(317 100% 54%);
+    border: hsl(317 100% 54%) 0.125em solid;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.25),0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 hsl(317 100% 54%), 0 0 0.5em 0 hsl(317 100% 54%);
+}
+#red-button::before{
+    background: hsl(317 100% 54%);
+}
+#red-button::after{
+    box-shadow: 0 0 2em 0.25em hsl(317 100% 54%);
+}
+#red-button:hover,
+#red-button:focus{
+    background: hsl(317 100% 54%);
+    color: white;
+    text-shadow: none;
+}
+
+
+.blue{
+    float: left;
+    text-align: center;
+    background: black;
+    height: 330px;
+    width: 25%;
+}
+#blue-button{
+    font-size: 2.9rem;
+    color: lightskyblue;
+    border: lightskyblue 0.125em solid;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.25),0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 lightskyblue, 0 0 0.5em 0 lightskyblue;
+}
+#blue-button::before{
+    background: lightskyblue;
+}
+#blue-button::after{
+    box-shadow: 0 0 2em 0.25em lightskyblue;
+}
+#blue-button:hover,
+#blue-button:focus{
+    background: lightskyblue;
+    color: white;
+    text-shadow: none;
+}
+
+.green{
+    float: left;
+    text-align: center;
+    background: black;
+    height: 330px;
+    width: 25%;
+}
+#green-button{
+    font-size: 2.8rem;
+    color: darkseagreen;
+    border: darkseagreen 0.125em solid;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.25),0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 darkseagreen, 0 0 0.5em 0 darkseagreen;
+}
+#green-button::before{
+    background: darkseagreen;
+}
+#green-button::after{
+    box-shadow: 0 0 2em 0.25em darkseagreen;
+}
+#green-button:hover,
+#green-button:focus{
+    background: darkseagreen;
+    color: white;
+    text-shadow: none;
+}
+
+.orange{
+    float: left;
+    text-align: center;
+    background: black;
+    height: 330px;
+    width: 25%;
+}
+#orange-button{
+    font-size: 2.8rem;
+    color: rgb(255, 127, 80);
+    border: rgb(255, 127, 80) 0.125em solid;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.25),0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 rgb(255, 127, 80), 0 0 0.5em 0 rgb(255, 127, 80);
+}
+#orange-button::before{
+    background: rgb(255, 127, 80);
+}
+#orange-button::after{
+    box-shadow: 0 0 2em 0.25em rgb(255, 127, 80);
+}
+#orange-button:hover,
+#orange-button:focus{
+    background: rgb(255, 127, 80);
+    color: white;
+    text-shadow: none;
+}
+
+#flock{
+    float: left;
+    width:50%;
+    height: 500px;
+    background-color: black;
+}
+
+#chartContainer{
+    float: left;
+    width: 50%;
+    height: 500px;
+    background-color: black;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+
+
+
+body{
+    background-color:black;
+    margin: 0 auto;
+}
+

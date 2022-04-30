@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Cormorant Garamond' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/65960b03d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <title>PusherPoll</title>
+</head>
+<body>
+    <div class="base">
+        <div class="header">
+          <div class="headerText" id="name" onclick="location.href='../../index.html'">Zelong</div>
+            <div id="linkedin" onclick="window.open('https://www.linkedin.com/in/%E6%B3%BD%E9%BE%99-%E7%8E%8B-6481b9238/')"><i class="fa-brands fa-linkedin"></i></div>
+            <div id="bilibili" onclick="window.open('https://space.bilibili.com/86036977') "><i class="fa-brands fa-bilibili"></i></div>
+            
+        </div>
+        <div class="intro" rel="preload">
+          <div class="introtext fade-in fade">What's your favorite Color?</div>
+        </div>
+
+        <div class="vote">
+            <div class="top">
+                <canvas id="flock"></canvas>
+                <div id="chartContainer"></div>
+            </div>
+
+            <div class="bot">
+
+                        <div class="red">
+                            <input type="button" name="color" id="red" value="Red" class="vote-input">
+                            <a class="button" id="red-button">Red</a>
+                        </div>
+                        <div class="blue">
+                            <input type="button" name="color" id="blue" value="Blue" class="vote-input">
+                            <a class="button" id="blue-button">Blue</a>
+                        </div>
+
+
+                        <div class="green">
+                            <input type="button" name="color" id="green" value="Green" class="vote-input">
+                            <a class="button" id="green-button">Green</a>
+                        </div>
+                        <div class="orange">
+                            <input type="button" name="color" id="orange" value="Orange"class="vote-input">
+                            <a class="button" id="orange-button">Orange</a>
+                        </div>
+            </div>
+
+
+            
+           
+        </div>
+
+        <div class="display">
+            
+        </div>
+    
+    </div>
+
+    
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/7.0.6/pusher.min.js" integrity="sha512-S8Ie767Gm998+S0JVitFEIl7LWrT7rZP7dwaC9fb9oDUO7Y4axSFoDzqu9geIsLT5LK/uAVM2CCj8yblnxzWMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js" integrity="sha512-FJ2OYvUIXUqCcPf1stu+oTBlhn54W0UisZB/TNrZaVMHHhYvLBV9jMbvJYtvDe5x/WVaoXZ6KB+Uqe5hT2vlyA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js" type="module" defer></script>
+    <script src="observers.js"></script>
+</body>
+</html>
