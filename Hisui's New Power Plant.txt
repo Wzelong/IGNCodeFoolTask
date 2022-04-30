@@ -1,0 +1,12 @@
+First, I want to know the amount of electricity that can fully power up the Jubilife Village per day. 
+So I did some research. I found that the Jubilife Village or City is the sixth-largest city in the Pokemon world. 
+Its central area includes a TV station, two trade stations,  a technology company, a school, and living buildings. 
+According to Constellation company's data, a typical small-business building consumes an average of 7699 kWh/month, which is approximately 250 kWh/day. 
+I estimated these areas' electricity needs and concluded that they would need 1500+ 300*2 + 2000 + 250 + 300 = 4650 kWh energy per day. 
+
+Second, I want to know how much energy one Voltorb can generate per day. 
+Considering the Voltorb is a perfect spherical capacitor with a diameter of 0.5m. 
+We know that the capacitance of a sphere is proportional to its radius. I calculated the capacitance for a Voltorb is around 2.78e-10F. 
+I shall use Pichu's data to estimate the voltage a Voltorb can produce, around 10kV/s. 
+Using the formula W = 0.5*C*(V square), the amount of energy a Voltorb can generate per day is around 1.03e8J, which equals 28 kWh. 
+Thus, we will need 167 Voltorb to power up the village entirely.
