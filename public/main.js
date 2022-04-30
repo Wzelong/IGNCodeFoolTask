@@ -328,7 +328,7 @@ function vote(color) {
     const choice = document.getElementById(color).value;
     const data = {color: choice};
 
-    fetch('http://localhost:3000/poll', {
+    fetch('https://igntasks.herokuapp.com/poll', {
         method: 'post',
         body: JSON.stringify(data),
         headers: new Headers({
@@ -352,7 +352,7 @@ document.getElementById("orange-button").onclick = function () {
 };
 
 
-fetch('http://localhost:3000/poll')
+fetch('https://igntasks.herokuapp.com/poll')
     .then(res => res.json())
     .then(data => {
         const votes = data.votes;
