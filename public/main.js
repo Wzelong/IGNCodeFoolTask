@@ -324,6 +324,8 @@ window.requestAnimationFrame(loop);
 
 const form = document.getElementById('vote-form');
 
+
+
 function vote(color) {
     const choice = document.getElementById(color).value;
     const data = {color: choice};
